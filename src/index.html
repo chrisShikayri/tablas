@@ -1,13 +1,141 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Tablas</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids con Estilo</title>
+    <style>
+        .grid {
+            display: grid;
+            gap: 10px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        /* Configuración de columnas para cada tabla */
+        .grid-3x3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .grid-4x4 {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .grid-5x5 {
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        .grid-6x6 {
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        /* Estilo de cada celda */
+        .col {
+            text-align: center;
+        }
+
+        .p-3 {
+            padding: 15px;
+        }
+
+        .border-round-sm {
+            border-radius: 8px;
+        }
+
+        .text-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* Colores para cada tabla */
+        .bg-primary {
+            background-color: #4CAF50; /* Verde para tabla 3x3 */
+            color: white;
+        }
+
+        .bg-secondary {
+            background-color: #2196F3; /* Azul para tabla 4x4 */
+            color: white;
+        }
+
+        .bg-tertiary {
+            background-color: #FF5722; /* Naranja para tabla 5x5 */
+            color: white;
+        }
+
+        .bg-quaternary {
+            background-color: #9C27B0; /* Morado para tabla 6x6 */
+            color: white;
+        }
+    </style>
 </head>
 <body>
-  <app-root></app-root>
+    <!-- Tabla 3x3 -->
+    <div class="grid grid-3x3">
+        <div class="col"><div class="text-center p-3 border-round-sm bg-primary">1</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-primary">2</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-primary">3</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-primary">4</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-primary">5</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-primary">6</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-primary">7</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-primary">8</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-primary">9</div></div>
+    </div>
+
+    <!-- Tabla 4x4 -->
+    <div class="grid grid-4x4">
+        <div class="col"><div class="text-center p-3 border-round-sm bg-secondary">1</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-secondary">2</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-secondary">3</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-secondary">4</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-secondary">5</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-secondary">6</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-secondary">7</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-secondary">8</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-secondary">9</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-secondary">10</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-secondary">11</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-secondary">12</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-secondary">13</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-secondary">14</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-secondary">15</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-secondary">16</div></div>
+    </div>
+
+    <!-- Tabla 5x5 -->
+    <div class="grid grid-5x5">
+        <div class="col"><div class="text-center p-3 border-round-sm bg-tertiary">1</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-tertiary">2</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-tertiary">3</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-tertiary">4</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-tertiary">5</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-tertiary">1</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-tertiary">2</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-tertiary">3</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-tertiary">4</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-tertiary">5</div></div>
+        <!-- Continúa con el resto... -->
+    </div>
+
+    <!-- Tabla 6x6 -->
+    <div class="grid grid-6x6">
+        <div class="col"><div class="text-center p-3 border-round-sm bg-quaternary">1</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-quaternary">2</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-quaternary">3</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-quaternary">4</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-quaternary">5</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-quaternary">6</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-quaternary">1</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-quaternary">2</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-quaternary">3</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-quaternary">4</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-quaternary">5</div></div>
+        <div class="col"><div class="text-center p-3 border-round-sm bg-quaternary">6</div></div>
+        <!-- Continúa con el resto... -->
+    </div>
 </body>
 </html>
